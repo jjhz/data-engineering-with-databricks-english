@@ -110,6 +110,8 @@ AS SELECT * FROM cloud_files("${datasets_path}/retail-org/customers/", "csv");
 -- MAGIC #### References to Streaming Tables
 -- MAGIC 
 -- MAGIC References to streaming DLT tables use the **`STREAM()`**, supplying the table name as an argument.
+-- MAGIC * 这里有写一点，stream batch joins
+-- MAGIC https://learn.microsoft.com/en-us/azure/databricks/workflows/delta-live-tables/delta-live-tables-incremental-data
 
 -- COMMAND ----------
 
