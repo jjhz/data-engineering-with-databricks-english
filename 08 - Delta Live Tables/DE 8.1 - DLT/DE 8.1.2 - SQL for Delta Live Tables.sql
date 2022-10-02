@@ -112,6 +112,7 @@ AS SELECT * FROM cloud_files("${datasets_path}/retail-org/customers/", "csv");
 -- MAGIC References to streaming DLT tables use the **`STREAM()`**, supplying the table name as an argument.
 -- MAGIC * 这里有写一点，stream batch joins
 -- MAGIC https://learn.microsoft.com/en-us/azure/databricks/workflows/delta-live-tables/delta-live-tables-incremental-data
+-- MAGIC * stream（）方法里面的是streaming的，其他的不是，即使customer是live的，他也是被对待为static的，这个还需要研究
 
 -- COMMAND ----------
 
